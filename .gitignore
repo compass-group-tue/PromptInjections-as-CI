@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# API keys and credentials
+*.token
+*.key
+.anthropic_token
+.openai_token
+.azure_openai_token
+.gemini_key
+.hf_token
+
+# OS
+.DS_Store
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log

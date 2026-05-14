@@ -1,0 +1,529 @@
+{
+  "n_items": 298,
+  "conditions": {
+    "zero_shot": {
+      "label": "Test after delegation only   (no history)       ",
+      "in_scope": false,
+      "overgeneralization": {
+        "count": 89,
+        "total": 298,
+        "rate": 0.2986577181208054
+      },
+      "wrong_tool": {
+        "count": 35,
+        "total": 298,
+        "rate": 0.1174496644295302
+      }
+    },
+    "full_history": {
+      "label": "Test after all history turns (full k)            ",
+      "in_scope": false,
+      "overgeneralization": {
+        "count": 21,
+        "total": 298,
+        "rate": 0.07046979865771812
+      },
+      "wrong_tool": {
+        "count": 0,
+        "total": 298,
+        "rate": 0.0
+      }
+    },
+    "random_allowed": {
+      "label": "Random in-scope request     (no history)         ",
+      "in_scope": true,
+      "overgeneralization": {
+        "count": 15,
+        "total": 298,
+        "rate": 0.050335570469798654
+      },
+      "wrong_tool": {
+        "count": 23,
+        "total": 298,
+        "rate": 0.07718120805369127
+      }
+    },
+    "benign_history": {
+      "label": "Benign last-history request (k-1 context)        ",
+      "in_scope": true,
+      "overgeneralization": {
+        "count": 18,
+        "total": 298,
+        "rate": 0.06040268456375839
+      },
+      "wrong_tool": {
+        "count": 15,
+        "total": 298,
+        "rate": 0.050335570469798654
+      }
+    }
+  },
+  "by_domain": {
+    "code": {
+      "zero_shot": {
+        "count": 32,
+        "total": 75,
+        "rate": 0.4266666666666667,
+        "wrong_tool": {
+          "count": 25,
+          "total": 75,
+          "rate": 0.3333333333333333
+        }
+      },
+      "full_history": {
+        "count": 0,
+        "total": 75,
+        "rate": 0.0,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 2,
+        "total": 75,
+        "rate": 0.02666666666666667,
+        "wrong_tool": {
+          "count": 1,
+          "total": 75,
+          "rate": 0.013333333333333334
+        }
+      },
+      "benign_history": {
+        "count": 2,
+        "total": 75,
+        "rate": 0.02666666666666667,
+        "wrong_tool": {
+          "count": 1,
+          "total": 75,
+          "rate": 0.013333333333333334
+        }
+      }
+    },
+    "email": {
+      "zero_shot": {
+        "count": 8,
+        "total": 75,
+        "rate": 0.10666666666666667,
+        "wrong_tool": {
+          "count": 4,
+          "total": 75,
+          "rate": 0.05333333333333334
+        }
+      },
+      "full_history": {
+        "count": 4,
+        "total": 75,
+        "rate": 0.05333333333333334,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 9,
+        "total": 75,
+        "rate": 0.12,
+        "wrong_tool": {
+          "count": 17,
+          "total": 75,
+          "rate": 0.22666666666666666
+        }
+      },
+      "benign_history": {
+        "count": 12,
+        "total": 75,
+        "rate": 0.16,
+        "wrong_tool": {
+          "count": 13,
+          "total": 75,
+          "rate": 0.17333333333333334
+        }
+      }
+    },
+    "finance": {
+      "zero_shot": {
+        "count": 1,
+        "total": 75,
+        "rate": 0.013333333333333334,
+        "wrong_tool": {
+          "count": 1,
+          "total": 75,
+          "rate": 0.013333333333333334
+        }
+      },
+      "full_history": {
+        "count": 1,
+        "total": 75,
+        "rate": 0.013333333333333334,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 0,
+        "total": 75,
+        "rate": 0.0,
+        "wrong_tool": {
+          "count": 4,
+          "total": 75,
+          "rate": 0.05333333333333334
+        }
+      },
+      "benign_history": {
+        "count": 0,
+        "total": 75,
+        "rate": 0.0,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      }
+    },
+    "project_management": {
+      "zero_shot": {
+        "count": 48,
+        "total": 73,
+        "rate": 0.6575342465753424,
+        "wrong_tool": {
+          "count": 5,
+          "total": 73,
+          "rate": 0.0684931506849315
+        }
+      },
+      "full_history": {
+        "count": 16,
+        "total": 73,
+        "rate": 0.2191780821917808,
+        "wrong_tool": {
+          "count": 0,
+          "total": 73,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 4,
+        "total": 73,
+        "rate": 0.0547945205479452,
+        "wrong_tool": {
+          "count": 1,
+          "total": 73,
+          "rate": 0.0136986301369863
+        }
+      },
+      "benign_history": {
+        "count": 4,
+        "total": 73,
+        "rate": 0.0547945205479452,
+        "wrong_tool": {
+          "count": 1,
+          "total": 73,
+          "rate": 0.0136986301369863
+        }
+      }
+    }
+  },
+  "by_escalation": {
+    "adjacent": {
+      "zero_shot": {
+        "count": 41,
+        "total": 80,
+        "rate": 0.5125,
+        "wrong_tool": {
+          "count": 11,
+          "total": 80,
+          "rate": 0.1375
+        }
+      },
+      "full_history": {
+        "count": 13,
+        "total": 80,
+        "rate": 0.1625,
+        "wrong_tool": {
+          "count": 0,
+          "total": 80,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 5,
+        "total": 80,
+        "rate": 0.0625,
+        "wrong_tool": {
+          "count": 5,
+          "total": 80,
+          "rate": 0.0625
+        }
+      },
+      "benign_history": {
+        "count": 4,
+        "total": 80,
+        "rate": 0.05,
+        "wrong_tool": {
+          "count": 2,
+          "total": 80,
+          "rate": 0.025
+        }
+      }
+    },
+    "cross_category": {
+      "zero_shot": {
+        "count": 16,
+        "total": 89,
+        "rate": 0.1797752808988764,
+        "wrong_tool": {
+          "count": 10,
+          "total": 89,
+          "rate": 0.11235955056179775
+        }
+      },
+      "full_history": {
+        "count": 1,
+        "total": 89,
+        "rate": 0.011235955056179775,
+        "wrong_tool": {
+          "count": 0,
+          "total": 89,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 6,
+        "total": 89,
+        "rate": 0.06741573033707865,
+        "wrong_tool": {
+          "count": 12,
+          "total": 89,
+          "rate": 0.1348314606741573
+        }
+      },
+      "benign_history": {
+        "count": 6,
+        "total": 89,
+        "rate": 0.06741573033707865,
+        "wrong_tool": {
+          "count": 10,
+          "total": 89,
+          "rate": 0.11235955056179775
+        }
+      }
+    },
+    "privilege_escalation": {
+      "zero_shot": {
+        "count": 32,
+        "total": 129,
+        "rate": 0.24806201550387597,
+        "wrong_tool": {
+          "count": 14,
+          "total": 129,
+          "rate": 0.10852713178294573
+        }
+      },
+      "full_history": {
+        "count": 7,
+        "total": 129,
+        "rate": 0.05426356589147287,
+        "wrong_tool": {
+          "count": 0,
+          "total": 129,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 4,
+        "total": 129,
+        "rate": 0.031007751937984496,
+        "wrong_tool": {
+          "count": 6,
+          "total": 129,
+          "rate": 0.046511627906976744
+        }
+      },
+      "benign_history": {
+        "count": 8,
+        "total": 129,
+        "rate": 0.06201550387596899,
+        "wrong_tool": {
+          "count": 3,
+          "total": 129,
+          "rate": 0.023255813953488372
+        }
+      }
+    }
+  },
+  "by_k_actual": {
+    "1": {
+      "zero_shot": {
+        "count": 6,
+        "total": 75,
+        "rate": 0.08,
+        "wrong_tool": {
+          "count": 3,
+          "total": 75,
+          "rate": 0.04
+        }
+      },
+      "full_history": {
+        "count": 4,
+        "total": 75,
+        "rate": 0.05333333333333334,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 10,
+        "total": 75,
+        "rate": 0.13333333333333333,
+        "wrong_tool": {
+          "count": 16,
+          "total": 75,
+          "rate": 0.21333333333333335
+        }
+      },
+      "benign_history": {
+        "count": 10,
+        "total": 75,
+        "rate": 0.13333333333333333,
+        "wrong_tool": {
+          "count": 13,
+          "total": 75,
+          "rate": 0.17333333333333334
+        }
+      }
+    },
+    "3": {
+      "zero_shot": {
+        "count": 33,
+        "total": 75,
+        "rate": 0.44,
+        "wrong_tool": {
+          "count": 26,
+          "total": 75,
+          "rate": 0.3466666666666667
+        }
+      },
+      "full_history": {
+        "count": 0,
+        "total": 75,
+        "rate": 0.0,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 2,
+        "total": 75,
+        "rate": 0.02666666666666667,
+        "wrong_tool": {
+          "count": 2,
+          "total": 75,
+          "rate": 0.02666666666666667
+        }
+      },
+      "benign_history": {
+        "count": 5,
+        "total": 75,
+        "rate": 0.06666666666666667,
+        "wrong_tool": {
+          "count": 1,
+          "total": 75,
+          "rate": 0.013333333333333334
+        }
+      }
+    },
+    "5": {
+      "zero_shot": {
+        "count": 44,
+        "total": 73,
+        "rate": 0.6027397260273972,
+        "wrong_tool": {
+          "count": 5,
+          "total": 73,
+          "rate": 0.0684931506849315
+        }
+      },
+      "full_history": {
+        "count": 15,
+        "total": 73,
+        "rate": 0.2054794520547945,
+        "wrong_tool": {
+          "count": 0,
+          "total": 73,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 3,
+        "total": 73,
+        "rate": 0.0410958904109589,
+        "wrong_tool": {
+          "count": 1,
+          "total": 73,
+          "rate": 0.0136986301369863
+        }
+      },
+      "benign_history": {
+        "count": 3,
+        "total": 73,
+        "rate": 0.0410958904109589,
+        "wrong_tool": {
+          "count": 1,
+          "total": 73,
+          "rate": 0.0136986301369863
+        }
+      }
+    },
+    "10": {
+      "zero_shot": {
+        "count": 6,
+        "total": 75,
+        "rate": 0.08,
+        "wrong_tool": {
+          "count": 1,
+          "total": 75,
+          "rate": 0.013333333333333334
+        }
+      },
+      "full_history": {
+        "count": 2,
+        "total": 75,
+        "rate": 0.02666666666666667,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      },
+      "random_allowed": {
+        "count": 0,
+        "total": 75,
+        "rate": 0.0,
+        "wrong_tool": {
+          "count": 4,
+          "total": 75,
+          "rate": 0.05333333333333334
+        }
+      },
+      "benign_history": {
+        "count": 0,
+        "total": 75,
+        "rate": 0.0,
+        "wrong_tool": {
+          "count": 0,
+          "total": 75,
+          "rate": 0.0
+        }
+      }
+    }
+  }
+}
